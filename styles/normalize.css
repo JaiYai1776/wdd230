@@ -1,0 +1,116 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header, nav, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    position: bottom;
+    top: 50px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Hamburger button */
+#hamburger {
+    display: none; /* Hide by default on larger screens */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile menu */
+#mobile-menu {
+    display: none;
+}
+
+#mobile-menu.open {
+    display: block;
+}
+
+/* Toggle icon for hamburger button */
+#hamburger::before {
+    content: '☰';
+}
+
+#hamburger.open::before {
+    content: '✕';
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+}
+
+/* Styling cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
