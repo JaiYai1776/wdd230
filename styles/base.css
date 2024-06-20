@@ -27,7 +27,7 @@ header nav a {
 
 nav {
     position: fixed; /* or relative, absolute, sticky depending on your design */
-    top: 50px; /* Adjust as needed */
+    top: 0px; /* Adjust as needed */
     left: 0;
     width: 100%;
     background-color: #201414;
