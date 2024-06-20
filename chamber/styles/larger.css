@@ -1,0 +1,11 @@
+/* Larger screen styles */
+@media (min-width: 601px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .events, .weather {
+        width: 45%;
+    }
+}
