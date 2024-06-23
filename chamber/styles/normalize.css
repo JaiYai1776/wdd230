@@ -1,0 +1,100 @@
+/* Reset or Normalize CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Base CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #702963;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    nav .menu-icon {
+        display: block;
+        cursor: pointer; /* Moved cursor property to the icon */
+    }
+}
+
+/* Main Content Areas */
+.hero {
+    background-image: url('/wdd230/chamber/images/Humansville,_MO.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+.cta {
+    background-color: #702963;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.events,
+.weather,
+.spotlights {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* CSS for hamburger and close button */
+#close {
+    display: none; /* Hide the close button by default */
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#mobile-menu.open {
+    display: block;
+}
+
+
+/* CSS for preventing scrolling when menu is open */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* CSS for dark mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Add your dark mode styles here */
+footer {
+    text-align: center;
+}
+
+.footer-content {
+    display: inline-block;
+    text-align: left;
+}
