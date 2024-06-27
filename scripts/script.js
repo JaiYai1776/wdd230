@@ -1,16 +1,3 @@
-const hamburger = document.getElementById("hamburger");
-const close = document.getElementById("close"); // Get the close button
-const mobileMenu = document.getElementById("mobile-menu");
-const body = document.body;
-
-document.getElementById('hamburger').addEventListener('click', function() {
-    this.classList.toggle('open');
-    document.getElementById('navigation').classList.toggle('open');
-});
-
-
-
-
 // Toggle dark mode
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.querySelector('#dark-mode-toggle');
@@ -33,5 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('darkMode', null);
         }
     });
+
+    // Page visit counter using localStorage
+    let pageVisits = localStorage.getItem('pageVisits');
+    if (!pageVisits) {
+        pageVisits = 0;
+    }
+    pageVisits++;
+    localStorage.setItem('pageVisits', pageVisits);
+    document.getElementById('page-visits').textContent = `Total Page Visits: ${pageVisits}`;
+
 });
 
+// Hamburger menu toggle
+document.getElementById('hamburger').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navigation').classList.toggle('open');
+});
