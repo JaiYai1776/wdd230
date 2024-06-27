@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const input = document.querySelector('#favchap');
-    const button = document.querySelector('button');
+    const button = document.querySelector('.add-button');
     const list = document.querySelector('.list');
 
     // Function to add a chapter
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             li.textContent = input.value;
             deleteButton.textContent = '❌';
+            deleteButton.classList.add('delete');
             
             li.append(deleteButton);
             list.append(li);
