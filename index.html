@@ -40,9 +40,13 @@
     </header>
     <main>
         <section class="hero">
-            <img src="images/hero-large.webp" alt="Hero Image">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                <img srcset="images/hero-large.webp" alt="" width="1200" height="600">
+            </picture>
             <div class="herolabel">
-                <p>Welcome to My Website</p>
+                <p>Bentonville Temple</p>
             </div>
         </section>
         <section class="card">
@@ -59,16 +63,11 @@
                 </ul>
             </div>
         </section>
+       
         <section class="card">
-            <h2>Information</h2>
-        </section>
-        <section class="current-events">
-            <h2>Current Events</h2>
-            <p>Placeholder content for current events.</p>
-        </section>
-        <section class="weather">
-            <h2>Weather</h2>
-            <p>Placeholder content for weather information.</p>
+            <p><strong>Location:</strong> Humansville, MO</p>
+            <p><strong>Temperature:</strong> --°F</p>
+            <p><strong>Description:</strong> Loading weather data...</p>
         </section>
         <section class="card map">
             <h2>Google Maps</h2>

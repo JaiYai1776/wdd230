@@ -6,6 +6,15 @@
         justify-content: center;
     }
 
+    
+    .hero img {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 2fr;
+        border-radius: 3%;
+        border-width: 0;
+    }
+      
     nav ul li {
         margin-right: 1rem;
     }
@@ -64,4 +73,21 @@
     .card p {
         color: #666;
     }
+/* Adjust map size */
+.map {
+    margin-top: 0px;
+}
+
+/* Adjust iframe size */
+.map iframe {
+    width: 100%;
+    height: 450px;
+}
+
+/* Adjust iframe size */
+.map iframe {
+    width: 100%;
+    height: 450px;
+}
+
 }
