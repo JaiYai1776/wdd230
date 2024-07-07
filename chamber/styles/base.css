@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box; /* Apply box-sizing to all elements */
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -13,12 +17,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    height: 80px; /* Adjust as needed */
 }
 
 header .logo {
     font-size: 1.5rem;
 }
 
+header nav {
+    background-color : #333;
+}
 header nav .hamburger-menu {
     display: none;
     font-size: 2rem;
@@ -26,36 +34,57 @@ header nav .hamburger-menu {
     border: none;
     color: #fff;
 }
-
-header nav ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header nav ul li {
-    margin-left: 1rem;
+nav ul li {
+    position: relative; /* Ensure relative positioning for absolute children */
+    margin-right: 1rem; /* Adjust spacing between navigation links */
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
 }
 
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust distance of the hover box from the link */
+    width: 100%;
+    height: 2px;
+    background-color: #4CAF50; /* Color of the hover box */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Show the hover box */
+    transform-origin: bottom left;
+}
 .hero {
-    background-image: url('../images/hero-image.jpg'); /* Replace with your background image path */
+    background-image: url('../images/hero-image.jpg');
+    background-color: #ccc;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    min-height: 300px; /* Adjust as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Center text alignment */
+    text-align: center;
 }
 
-.join-button {
+.hero .join-button {
     background-color: #4CAF50;
     color: white;
     padding: 1rem 2rem;
@@ -63,40 +92,97 @@ header nav ul li a {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: 1rem; /* Adjust spacing between button and image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow size and color as needed */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+
+.hero .join-button:hover {
+    background-color: #45a049; /* Darker shade of the same color */
 }
 
 .hero-image {
-    margin-top: 1rem; /* Adjust the space between the button and the image */
-    max-width: 100%; /* Ensure the image does not exceed the hero section width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    opacity: 1; /* Ensure images are initially visible */
+    border-radius: 5px;
+}
+
+.gallery figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery figure:hover img {
+    transform: scale(1.1);
+}
+
+.gallery figure:hover figcaption {
+    opacity: 1;
+}
+
 
 .content {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    
 }
 
-.events, .weather {
+.events,
+.weather {
     margin-bottom: 2rem;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow size and color as needed */
+    padding: 20px; /* Add padding for better spacing */
 }
+
 
 .member-spotlights {
     padding: 2rem;
 }
 
 .member-spotlights .spotlight {
-    background-color: #f9f9f9;
+    background-color: #b9b0b0;
     padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow size and color as needed */
+    padding: 20px; /* Add padding for better spacing */
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem; /* Increase padding for better spacing */
 }
 
 footer a {
@@ -104,13 +190,138 @@ footer a {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
-    header nav ul {
-        display: none;
-        flex-direction: column;
+/* Discover page specific styles */
+
+/* Sidebar and Main Area Layout */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar and main area ratio */
+    gap: 20px; /* Gap between sidebar and main area */
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: #c0baba;
+    border-left: 1px solid #ddd; /* Add a subtle border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.sidebar-content {
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333; /* Darker text color */
+    border-bottom: 2px solid #4CAF50; /* Green underline */
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #555; /* Slightly darker text color */
+    display: block;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+}
+
+.sidebar .widget {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
     }
 
-    header nav .hamburger-menu {
-        display: block;
+    .sidebar {
+        padding: 15px;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 20px;
     }
+
+    .sidebar h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Adjustments for smaller screens if needed */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+}
+
+
+.alert-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease;
+    z-index: 1000;
+    display: none;
+}
+
+.alert-container.show {
+    display: block;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #4CAF50;
+}
+
+.social-icon i {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover i {
+    transform: scale(1.2);
 }

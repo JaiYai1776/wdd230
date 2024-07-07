@@ -18,6 +18,25 @@
     nav ul li {
         margin-right: 1rem;
     }
+    
+    nav .active {
+        color: white;
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: .5rem;
+        margin: .5rem;
+        transition: color 0.3s;
+      }
+      
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+      }
 
     /* Hamburger button */
 #hamburger {
