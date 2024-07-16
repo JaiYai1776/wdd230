@@ -16,6 +16,7 @@
     <meta property="og:image" content="https://jaiyai1776.github.io/chamber/images/Humansville_MO.jpg">
     <meta property="og:url" content="https://jaiyai1776.github.io/chamber/index.html">
     
+    
 </head>
 <body>
     <header>
@@ -30,8 +31,104 @@
             </ul>
         </nav>
     </header>
+ 
+    <main>
+        <section id="membership-form">
+            <h1>Membership Application Form</h1>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <div>
+                        <label for="firstName">Applicant's First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Applicant's Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div>
+                        <label for="position">Applicant's Title/Position:</label>
+                        <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Please enter at least 7 characters of letters, hyphens, and spaces." required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    </div>
+                    <div>
+                        <label for="phone">Mobile Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="orgName">Business/Organization Name:</label>
+                        <input type="text" id="orgName" name="orgName" required>
+                    </div>
+                    <div>
+                        <label for="membership">Membership Level:</label>
+                        <select id="membership" name="membership" required>
+                            <option value="">Select Membership Level</option>
+                            <option value="NP">NP Membership (Free)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description">Business/Organization Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <div>
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Submit Application">
+                </div>
+            </form>
+        </section>
+
+        <!-- Membership Benefits Section (side display in larger views) -->
+        <section id="membership-benefits">
+            <div id="np-benefits" class="membership-level-benefits">
+                <h3>NP Membership (Non-Profit)</h3>
+                <ul>
+                    <li>No membership fee</li>
+                    <li>Access to networking events specifically for non-profit organizations</li>
+                    <li>Listing in the directory of non-profit members on the website</li>
+                </ul>
+            </div>
+
+            <div id="bronze-benefits" class="membership-level-benefits">
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>Basic listing in the member directory</li>
+                    <li>Access to one educational webinar per quarter</li>
+                    <li>Discounted rates for advertising opportunities on the website</li>
+                </ul>
+            </div>
+
+            <div id="silver-benefits" class="membership-level-benefits">
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>Enhanced listing in the member directory with a logo</li>
+                    <li>Access to two educational webinars per quarter</li>
+                    <li>Priority consideration for speaking opportunities at events</li>
+                    <li>10% discount on event registrations</li>
+                </ul>
+            </div>
+
+            <div id="gold-benefits" class="membership-level-benefits">
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>Featured listing in the member directory with a prominent logo and description</li>
+                    <li>Access to all educational webinars</li>
+                    <li>Priority sponsorship opportunities for events</li>
+                    <li>20% discount on event registrations</li>
+                    <li>Exclusive access to networking events with industry leaders</li>
+                </ul>
+            </div>
+        </section>
+    </main>
     
-  
     <footer>
         <p>&copy; 2024 Humansville Chamber of Commerce</p>
         <p>P.O. Box 195, Humansville, MO 65674-0195</p>
