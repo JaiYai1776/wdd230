@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-wrapper {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0px; /* Space between h1 and formDataContainer */
+}
+
+#formDataContainer {
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 500px; /* Example max-width for the container */
+}

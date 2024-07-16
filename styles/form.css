@@ -1,0 +1,89 @@
+/* Styling for form.html */
+
+/* Define :root pseudo-class CSS variables */
+:root {
+    --form-background-color: #ffffff; /* Changed for a cleaner look */
+    --form-text-color: #333;
+    --form-border-color: #e0e0e0; /* Lighter border for subtlety */
+    --form-input-padding: 0.75rem; /* Increased padding for better touch targets */
+    --form-input-border-radius: 8px; /* Slightly more rounded corners */
+    --form-button-color: #6200ee; /* New accent color */
+    --form-button-hover-color: #3700b3; /* Darker shade for hover */
+}
+
+/* Form styling */
+form {
+    background-color: var(--form-background-color);
+    color: var(--form-text-color);
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: var(--form-input-border-radius); /* Rounded corners */
+}
+
+/* Label styling */
+form label {
+    font-weight: bold; /* Make labels stand out */
+    margin-bottom: 0.5rem;
+}
+
+/* Input and textarea styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: var(--form-input-padding);
+    border: 1px solid var(--form-border-color);
+    border-radius: var(--form-input-border-radius);
+    margin-bottom: 1rem;
+    font-size: 1rem; /* Consistent font size */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+    border-color: var(--form-button-color); /* Accent border on focus */
+}
+
+/* Submit button styling */
+form button[type="submit"] {
+    background-color: var(--form-button-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem; /* Increased padding */
+    border: none;
+    border-radius: var(--form-input-border-radius);
+    cursor: pointer;
+    font-size: 1rem; /* Consistent font size */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--form-button-hover-color); /* Darker shade for hover */
+}
+
+/* Improved readability and alignment */
+form label,
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form button[type="submit"] {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Range input styling */
+form input[type="range"] {
+    padding: 0;
+    border: none;
+}
+
+.range-value {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+}
