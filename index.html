@@ -79,24 +79,30 @@
             <!-- Weekly activities -->
             <div class="card-content">
                 <h2>Weekly Activities</h2>
-                <ul>
-                    <li>Week 01: <a href="week01/holygrail.html">CSS Layout</a> | <a href="week01/media-query.html">Media Query</a></li>
-                    <li>Week 02: <a href="week02/design.html">Web Design Principles</a> | <a href="https://codepen.io/jaiyai/pen/bGyJvgw">Responsive Hamburger Menu</a> | <a href="week02/bom.html">DOM Manipulation</a></li>
-                    <li>Week 03: <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/lazyload.html">Lazy Load</a> | <a href="week03/bom.html">DOM Manipulation With Storage</a></li>
-                    <li>Week 04: <a href="form.html">Form Submission</a> | <a href="https://codepen.io/jaiyai/pen/GRbpyGG">Pseudo-class Fun</a> | <a href="/week04/tablebuild.html">TableBuilder</a> | <a href="/week04/images/combinators.png">Combinators</a> | <a href="/week04/Form-start/index.html">Form Tutorial</a></li>
-                    <li>Week 05: <a href="https://codepen.io/jaiyai/pen/oNrbKMY?editors=1100">Psuedo Elements</a> | <a href="/week05/new-ward-members.json">JSON</a> | <a href="week05/JSON/index.html">Family JSON </a> | <a href="week05/prophets.html">Fetch API</a> | <a href="week05/weather.html">Weather API</a> </li>
-                    <li>Week 06: <a href="#">Placeholder</a></li>
-                    <li>Week 07: <a href="#">Placeholder</a></li>
+                <ul id="activity-links">
+                 
                 </ul>
             </div>
         </section>
         
         <section class="card">
-            <!-- Placeholder weather information -->
-            <p><strong>Location:</strong> Humansville, MO</p>
-            <p><strong>Temperature:</strong> --°F</p>
-            <p><strong>Description:</strong> Loading weather data...</p>
+            <div class="weather-info">
+                <div class="location">
+                    <strong>Location:</strong> <span id="location">Humansville, MO</span>
+                </div>
+                <div class="temperature">
+                    <strong>Temperature:</strong> <span id="temperature">--°F</span>
+                </div>
+                <div class="description">
+                    <strong>Description:</strong> <span id="description">Loading weather data...</span>
+                </div>
+                <div class="icon">
+                    <img src="" alt="Weather Icon" id="weather-icon">
+                </div>
+            </div>
         </section>
+        
+        
         
         <section class="card map">
             <!-- Google Maps iframe -->
@@ -116,5 +122,6 @@
     <!-- External JavaScript files (deferred for optimal page load) -->
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </body>
 </html>

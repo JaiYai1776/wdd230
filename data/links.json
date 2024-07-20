@@ -1,0 +1,120 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "CSS Layout"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Media Query"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/design.html",
+            "title": "Web Design Principles"
+          },
+          {
+            "url": "https://codepen.io/jaiyai/pen/bGyJvgw",
+            "title": "Responsive Hamburger Menu"
+          },
+          {
+            "url": "week02/bom.html",
+            "title": "DOM Manipulation"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/responsive-images.html",
+            "title": "Responsive Images"
+          },
+          {
+            "url": "week03/lazyload.html",
+            "title": "Lazy Load"
+          },
+          {
+            "url": "week03/bom.html",
+            "title": "DOM Manipulation With Storage"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "form.html",
+            "title": "Form Submission"
+          },
+          {
+            "url": "https://codepen.io/jaiyai/pen/GRbpyGG",
+            "title": "Pseudo-class Fun"
+          },
+          {
+            "url": "/week04/tablebuild.html",
+            "title": "TableBuilder"
+          },
+          {
+            "url": "/week04/images/combinators.png",
+            "title": "Combinators"
+          },
+          {
+            "url": "/week04/Form-start/index.html",
+            "title": "Form Tutorial"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://codepen.io/jaiyai/pen/oNrbKMY?editors=1100",
+            "title": "Pseudo Elements"
+          },
+          {
+            "url": "/week05/new-ward-members.json",
+            "title": "JSON"
+          },
+          {
+            "url": "week05/JSON/index.html",
+            "title": "Family JSON"
+          },
+          {
+            "url": "week05/prophets.html",
+            "title": "Fetch API"
+          },
+          {
+            "url": "week05/weather.html",
+            "title": "Weather API"
+          }
+        ]
+      },
+      {
+        "week": "Week 6",
+        "links": [
+          {
+            "url": "#",
+            "title": "Placeholder"
+          }
+        ]
+      },
+      {
+        "week": "Week 7",
+        "links": [
+          {
+            "url": "#",
+            "title": "Placeholder"
+          }
+        ]
+      }
+    ]
+  }
+  
