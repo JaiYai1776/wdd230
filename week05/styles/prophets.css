@@ -1,0 +1,70 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8f8282;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: normal;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden; /* Ensures rounded corners don't leak out */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lifts the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners on top */
+    transition: transform 0.3s ease; /* Smooth image scaling */
+}
+
+section:hover img {
+    transform: scale(1.5); /* Enlarge image on hover to 2x its original size */
+}
+
+footer {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #a39696;
+    color: #fff;
+}

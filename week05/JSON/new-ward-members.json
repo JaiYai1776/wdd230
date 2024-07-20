@@ -1,0 +1,24 @@
+{
+    "family_name": "Arnold",
+    "move_in_date": "January 31, 2024",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+      {
+        "name": "JeanAlbert",
+        "gender": "male",
+        "birthdate": "11/25/1976"
+      },
+      {
+        "name": "Genevieve",
+        "gender": "female",
+        "birthdate": "11/23/1974"
+      },
+      {
+        "name": "Isabella",
+        "gender": "female",
+        "birthdate": "4/28/2010"
+      }
+    ]
+  }
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather Display</title>
+    <link rel="stylesheet" href="styles/weather.css">
+</head>
+<body>
+    <div class="weather-container">
+        <header>
+            <h1>Current Weather</h1>
+        </header>
+        <main class="main">
+            <div class="weather-info">
+                <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <p>JeanAlbert Arnold | <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
+        </footer>
+    </div>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
