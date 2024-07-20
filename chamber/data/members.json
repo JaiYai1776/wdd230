@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Smith's Hardware Store",
+        "address": "123 Main St, Humansville, MO",
+        "phone": "(417) 123-4567",
+        "website": "http://smithshardware.com",
+        "image": "smiths-hardware.jpg",
+        "membership_level": "Gold",
+        "contact": "John Smith",
+        "email": "john.smith@example.com"
+    },
+    {
+        "name": "Green Valley Farm Market",
+        "address": "456 Greenway Rd, Humansville, MO",
+        "phone": "(417) 234-5678",
+        "website": "http://greenvalleyfarm.com",
+        "image": "green-valley.jpg",
+        "membership_level": "Silver",
+        "contact": "Emily Green",
+        "email": "emily.green@example.com"
+    },
+    {
+        "name": "Oakridge Accounting Services",
+        "address": "789 Oak St, Humansville, MO",
+        "phone": "(417) 345-6789",
+        "website": "http://oakridgeaccounting.com",
+        "image": "oakridge-accounting.jpg",
+        "membership_level": "Gold",
+        "contact": "Michael Oak",
+        "email": "michael.oak@example.com"
+    },
+    {
+        "name": "Blue Sky Travel Agency",
+        "address": "101 Blue Sky Dr, Humansville, MO",
+        "phone": "(417) 456-7890",
+        "website": "http://blueskytravel.com",
+        "image": "blue-sky.jpg",
+        "membership_level": "Bronze",
+        "contact": "Sarah Blue",
+        "email": "sarah.blue@example.com"
+    },
+    {
+        "name": "Sunset Café & Bakery",
+        "address": "202 Sunset Blvd, Humansville, MO",
+        "phone": "(417) 567-8901",
+        "website": "http://sunsetcafe.com",
+        "image": "sunset-cafe.jpg",
+        "membership_level": "Silver",
+        "contact": "Mark Sunset",
+        "email": "mark.sunset@example.com"
+    },
+    {
+        "name": "Bright Future Consulting",
+        "address": "303 Future Ave, Humansville, MO",
+        "phone": "(417) 678-9012",
+        "website": "http://brightfuture.com",
+        "image": "bright-future.jpg",
+        "membership_level": "Gold",
+        "contact": "Lisa Bright",
+        "email": "lisa.bright@example.com"
+    },
+    {
+        "name": "Tech Innovators Inc.",
+        "address": "404 Innovation St, Humansville, MO",
+        "phone": "(417) 789-0123",
+        "website": "http://techinnovators.com",
+        "image": "tech-innovators.png",
+        "membership_level": "Bronze",
+        "contact": "Tom Tech",
+        "email": "tom.tech@example.com"
+    },
+    {
+        "name": "Health First Clinic",
+        "address": "505 Health Rd, Humansville, MO",
+        "phone": "(417) 890-1234",
+        "website": "http://healthfirst.com",
+        "image": "health-first.png",
+        "membership_level": "Silver",
+        "contact": "Dr. Health",
+        "email": "dr.health@example.com"
+    }
+]

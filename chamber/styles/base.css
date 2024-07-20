@@ -449,3 +449,39 @@ section ul li {
         .business-listing .contact-info {
             font-style: italic;
         }
+        #business-directory {
+            margin: 0 auto;
+            width: 80%;
+        }
+        
+        .business-listing {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .grid-view .business-listing {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+        }
+        
+        .business-listing img {
+            max-width: 100px;
+        }
+        
+        .business-listing a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .business-listing a:hover {
+            text-decoration: underline;
+        }
+        
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        
