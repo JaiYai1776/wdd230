@@ -17,11 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 `;
                 businessList.appendChild(businessDiv);
             });
-        });
+        })
+        .catch(error => console.error('Error loading JSON:', error));
 
     const toggleButton = document.getElementById('toggleView');
     toggleButton.addEventListener('click', () => {
         const businessList = document.getElementById('business-list');
-        businessList.classList.toggle('grid-view');
+        if (businessList.classList.contains('grid-view')) {
+            businessList.classList.remove('grid-view');
+        } else {
+            businessList.classList.add('grid-view');
+        }
     });
 });

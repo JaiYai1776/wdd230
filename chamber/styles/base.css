@@ -459,12 +459,13 @@ section ul li {
             padding: 10px;
             margin: 10px 0;
         }
-        
         .grid-view .business-listing {
             display: inline-block;
             width: 45%;
             margin: 10px;
+            vertical-align: top; /* Ensures alignment of grid items */
         }
+        
         
         .business-listing img {
             max-width: 100px;
