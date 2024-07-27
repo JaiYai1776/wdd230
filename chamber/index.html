@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="JeanAlbert Allen Arnold">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humansville Chamber of Commerce</title>
+    <meta name="author" content="JeanAlbert Allen Arnold">
     <meta name="description" content="Welcome to the Humansville Chamber of Commerce. Join us and be part of our community.">
+    <title>Humansville Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <meta property="og:title" content="Humansville Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://jaiyai1776.github.io/chamber/images/Humansville_MO.jpg">
     <meta property="og:url" content="https://jaiyai1776.github.io/chamber/index.html">
-    
 </head>
 <body>
     <header>
-        <div class="logo"><h1>Humansville Chamber of Commerce</h1></div>
+        <h1 class="logo">Humansville Chamber of Commerce</h1>
         <nav>
             <button class="hamburger-menu">&#9776;</button>
             <ul class="nav-links">
@@ -32,69 +31,93 @@
     
     <div class="hero">
         <a href="join.html" class="join-button">Join the Chamber</a>
-
-        <img src="images/banner.jpg" alt="" class="hero-image">
+       
     </div>
     
-    <main class="content">
-        <section class="events">
-            <h2>Events</h2>
-            <div class="event-item">
-                <h3>Ribbon Cutting - The Diamond Shack</h3>
-                <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
-                <a href="#">More info...</a>
+    <main>
+        
+            <section class="events">
+                <h2>Events</h2>
+                <div class="event-container">
+                    <div class="event-item">
+                        <div class="event-image" style="background-image: url('/chamber/images/event1.jpg');"></div>
+                        <div class="event-details">
+                            <p class="event-date">EVENT / 20 July 2024</p>
+                            <h3 class="event-title">Ribbon Cutting - The Diamond Shack</h3>
+                            <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                    <!-- Repeat similar blocks for other events -->
+                    <div class="event-item">
+                        <div class="event-image" style="background-image: url('/chamber/images/event2.jpg');"></div>
+                        <div class="event-details">
+                            <p class="event-date">EVENT / 25 July 2024</p>
+                            <h3 class="event-title">Business Networking Evening</h3>
+                            <p>Connect with other local businesses at our networking evening, Tuesday at 6:00 p.m.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-image" style="background-image: url('/chamber/images/event3.jpg');"></div>
+                        <div class="event-details">
+                            <p class="event-date">EVENT / 30 July 2024</p>
+                            <h3 class="event-title">Small Business Workshop</h3>
+                            <p>Learn how to grow your small business, Friday at 10:00 a.m.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-image" style="background-image: url('/chamber/images/event4.jpg');"></div>
+                        <div class="event-details">
+                            <p class="event-date">EVENT / 05 August 2024</p>
+                            <h3 class="event-title">Startup Pitch Competition</h3>
+                            <p>Watch local startups pitch their ideas, Monday at 2:00 p.m.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-image" style="background-image: url('/chamber/images/event5.jpg');"></div>
+                        <div class="event-details">
+                            <p class="event-date">EVENT / 10 August 2024</p>
+                            <h3 class="event-title">Annual Gala Dinner</h3>
+                            <p>Celebrate the year's achievements at our annual gala, Saturday at 7:00 p.m.</p>
+                            <a href="#" class="read-more">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="spotlight">
+                <h2>Member Spotlight</h2>
+            </section>
+            
+        <section class="card weather">
+            <h2>Weather Information</h2>
+            <div class="weather-info">
+                <p><strong>Location:</strong> <span id="location">Humansville, MO</span></p>
+                <p><strong>Temperature:</strong> <span id="temperature">--°F</span></p>
+                <p><strong>Description:</strong> <span id="description">Loading weather data...</span></p>
+                <div class="icon"><img src="" alt="Weather Icon" id="weather-icon"></div>
             </div>
         </section>
-        
-        <section class="weather">
-            <h2>Weather</h2>
-            <p>33°C Partly Cloudy</p>
-            <p>Humidity: 35%</p>
-            <p>Wind Chill: N/A</p>
-        </section>
     </main>
-    
-    <section class="member-spotlights">
-        <h2>Member Spotlights</h2>
-        <div class="spotlight">
-            <h3>Thankful Transport</h3>
-            <p>"We get it there for you!"</p>
-            <a href="mailto:hello@thankfultransport.com">hello@thankfultransport.com</a><br>
-            <a href="tel:+9999999999">+999-9999-9999</a><br>
-            <a href="#">Website</a>
-        </div>
-        <div class="spotlight">
-            <h3>Code Primera</h3>
-            <p>After school coding!</p>
-            <a href="mailto:contact@codeprimera.com">contact@codeprimera.com</a><br>
-            <a href="tel:+9999999999">+999-9999-9999</a><br>
-            <a href="#">Website</a>
-        </div>
-        <div class="spotlight">
-            <h3>Build A Treefort</h3>
-            <p>Over 1000 Plans!</p>
-            <a href="mailto:builda@treefort.com">builda@treefort.com</a><br>
-            <a href="tel:+8888888888">+888-8888-8888</a><br>
-            <a href="#">Website</a>
-        </div>
-    </section>
     
     <footer>
         <p>&copy; 2024 Humansville Chamber of Commerce</p>
         <p>P.O. Box 195, Humansville, MO 65674-0195</p>
-        <a href="mailto:info@humansvillecc.org">info@humansvillecc.org</a><br>
-        <a href="tel:+14177542257">+1 (417) 754-2257</a><br>
-        <a href="#">Location Map</a>
-        <p>Developed by JeanAlbert Arnold for WDD 230</p>
-        <p id="last-modified"></p>
+        <p>Email: <a href="mailto:info@humansvillecc.org">info@humansvillecc.org</a></p>
+        <p>Phone: <a href="tel:+14177542257">+1 (417) 754-2257</a></p>
+        <p>Location Map and Social Media Links</p>
         <div class="social-icons">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <!-- Add more social media icons as needed -->
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i the class="fab fa-instagram"></i></a>
         </div>
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="scripts/members.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

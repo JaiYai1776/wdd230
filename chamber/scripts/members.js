@@ -30,3 +30,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(members => {
+            const qualifiedMembers = members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+            const selectedMembers = [];
+            for (let i = 0; i < 3 && qualifiedMembers.length > 0; i++) {
+                const index = Math.floor(Math.random() * qualifiedMembers.length);
+                selectedMembers.push(qualifiedMembers.splice(index, 1)[0]);
+            }
+            const spotlightSection = document.getElementById('spotlight');
+            selectedMembers.forEach(member => {
+                const memberDiv = document.createElement('div');
+                memberDiv.classList.add('business-listing'); // Reuse the styling class from the directory
+                memberDiv.innerHTML = `
+                    <h3>${member.name}</h3>
+                    <p>${member.description || ''}</p>
+                    <p>Contact: ${member.contact} | Phone: ${member.phone} | Email: <a href="mailto:${member.email}">${member.email}</a></p>
+                    <a href="${member.website}" target="_blank">Visit Website</a>
+                `;
+                spotlightSection.appendChild(memberDiv);
+            });
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+});

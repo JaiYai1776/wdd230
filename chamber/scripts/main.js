@@ -35,3 +35,17 @@ function showAlert(message) {
         alertContainer.classList.remove('show');
     }, 3000); // Hide after 3 seconds
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const today = new Date();
+    const dayOfWeek = today.getDay(); // Sunday - 0, Monday - 1, ..., Saturday - 6
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) { // 1 (Monday) to 3 (Wednesday)
+        const banner = document.createElement('div');
+        banner.id = 'meetGreetBanner';
+        banner.innerHTML = `
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 PM!</p>
+            <button onclick="document.getElementById('meetGreetBanner').style.display='none'">❌ Close</button>
+        `;
+        document.body.insertBefore(banner, document.body.firstChild);
+    }
+});
